@@ -5,6 +5,9 @@
   width: 100%;
   font-family: Nixie;
   text-align: center;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
+  background-size: cover;
+  border-top: 2px groove $light;  
 
   .footer-columns {
     display: flex;
@@ -23,12 +26,12 @@
       font-size: 1.2rem;
       font-weight: 600;
       margin-bottom: 1rem;
-      color: #222;
+      color: $light;
     }
 
     p, li {
       font-size: 1rem;
-      color: #555;
+      color: $light;
       margin-bottom: 0.5rem;
     }
 

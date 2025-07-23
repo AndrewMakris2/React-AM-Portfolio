@@ -2,7 +2,10 @@ import React from 'react'
 
 const Learning = () => {
   return (
-    <div>Learning</div>
+    <div className='Learn'>
+        <h2>My Learning and Goals</h2>
+        <hr />
+    </div>
   )
 }
 

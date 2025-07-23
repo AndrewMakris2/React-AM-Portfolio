@@ -1,0 +1,48 @@
+.Banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem;
+    // margin-top: 2rem;
+    font-family: nixie;
+    font-weight: bolder;
+    .Resume{
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5rem;
+        ul {
+            list-style-type: disc; /* Bullet points */
+            margin-left: 1rem;     /* Indent the whole list */
+            padding-left: 1rem;    /* Additional space between bullet and text */
+            }
+
+            li {
+            margin-bottom: 0.5rem; /* Space between each bullet */
+            line-height: 1.6;      /* Improve readability */
+            }
+
+        h2{
+            color: black;
+
+        }
+        p{
+            color: black;
+        }
+
+    }
+    .pic{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        img{
+            width: 67%;
+            height: 100%;
+            border-radius: .75rem;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+    }
+}

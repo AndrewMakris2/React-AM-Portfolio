@@ -201,6 +201,9 @@ body {
   border-bottom: 2px groove rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   background-color: rgb(255, 255, 255);
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
+  background-size: cover;
+  background-position: center top -12rem;
 }
 .Nav .bar {
   display: flex;
@@ -212,21 +215,49 @@ body {
 .Nav .bar .vertical-line {
   width: 2px; /* Adjust thickness */
   height: 100px; /* Adjust length */
-  background-color: black; /* Line color */
+  background-color: rgb(255, 255, 255); /* Line color */
 }
 .Nav .bar h2 {
-  color: rgb(28, 28, 28);
+  color: rgb(255, 250, 250);
   font-family: Nixie;
   font-size: 1.3rem;
   font-weight: bolder;
 }
 .Nav .bar h4 {
-  color: rgb(28, 28, 28);
+  color: rgb(255, 250, 250);
   font-family: Nixie;
   font-size: 1.2rem;
 }
 .Nav .bar h4:hover {
   text-decoration: underline;
+}
+
+.Learn {
+  padding: 3rem;
+  font-family: Nixie;
+  line-height: 1.5rem;
+}
+.Learn h2 {
+  margin: 1rem;
+  font-weight: bolder;
+}
+.Learn hr {
+  width: 100%;
+  margin: 1rem;
+}
+
+.Problems {
+  padding: 3rem;
+  font-family: Nixie;
+  line-height: 1.5rem;
+}
+.Problems h2 {
+  margin: 1rem;
+  font-weight: bolder;
+}
+.Problems hr {
+  width: 100%;
+  margin: 1rem;
 }
 
 .Expierence {
@@ -289,6 +320,55 @@ body {
   margin-top: 0.5rem;
 }
 
+.Projects {
+  padding: 3rem;
+  font-family: Nixie;
+  line-height: 1.5rem;
+}
+.Projects h2 {
+  margin: 1rem;
+  font-weight: bolder;
+}
+.Projects hr {
+  width: 100%;
+  margin: 1rem;
+}
+.Projects .Project {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Projects .Project h2 {
+  text-align: center;
+}
+.Projects .Project div {
+  padding: 3rem;
+  width: 32%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.Projects .Project div li {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.Projects .Project div a {
+  color: rgb(28, 28, 28);
+  text-decoration: none;
+}
+
+.Skills {
+  padding: 3rem;
+  font-family: Nixie;
+  line-height: 1.5rem;
+}
+.Skills h2 {
+  margin: 1rem;
+  font-weight: bolder;
+}
+.Skills hr {
+  width: 100%;
+  margin: 1rem;
+}
+
 .Footer {
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.3) 0px -19px 38px, rgba(0, 0, 0, 0.22) 0px -15px 12px;
@@ -296,6 +376,9 @@ body {
   width: 100%;
   font-family: Nixie;
   text-align: center;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
+  background-size: cover;
+  border-top: 2px groove rgb(255, 250, 250);
 }
 .Footer .footer-columns {
   display: flex;
@@ -313,11 +396,11 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #222;
+  color: rgb(255, 250, 250);
 }
 .Footer .footer-col p, .Footer .footer-col li {
   font-size: 1rem;
-  color: #555;
+  color: rgb(255, 250, 250);
   margin-bottom: 0.5rem;
 }
 .Footer .footer-col ul {
@@ -331,4 +414,47 @@ body {
 }
 .Footer .footer-col a:hover {
   text-decoration: underline;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
+  font-family: nixie;
+  font-weight: bolder;
+}
+.Banner .Resume {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+.Banner .Resume ul {
+  list-style-type: disc; /* Bullet points */
+  margin-left: 1rem; /* Indent the whole list */
+  padding-left: 1rem; /* Additional space between bullet and text */
+}
+.Banner .Resume li {
+  margin-bottom: 0.5rem; /* Space between each bullet */
+  line-height: 1.6; /* Improve readability */
+}
+.Banner .Resume h2 {
+  color: black;
+}
+.Banner .Resume p {
+  color: black;
+}
+.Banner .pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Banner .pic img {
+  width: 67%;
+  height: 100%;
+  border-radius: 0.75rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }/*# sourceMappingURL=index.css.map */

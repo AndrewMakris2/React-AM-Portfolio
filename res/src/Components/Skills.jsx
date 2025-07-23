@@ -2,7 +2,10 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <div className='Skills'>
+        <h2>Skills</h2>
+        <hr />
+    </div>
   )
 }
 

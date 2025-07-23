@@ -32,7 +32,7 @@ const timelineData = [
     year: "Ongoing",
     title: "Career Goals",
     institution: "Self-Driven",
-    description: "Aiming to advance into Cloud Security Engineering and eventually a Cyber Architect role. Passionate about secure design, automation, and threat detection in cloud-native environments."
+    description: "Actively working toward the CySA+ certification and focused on gaining as many new cybersecurity skills as possible. Aiming to advance into Cloud Security Engineering and eventually transition into a Cyber Architect role. Passionate about secure design, automation, and threat detection in cloud-native environments."
   }
 ];
 
