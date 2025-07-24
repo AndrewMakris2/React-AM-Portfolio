@@ -1,34 +1,91 @@
 .Projects {
-    padding: 3rem;
-    font-family: Nixie;
-    line-height: 1.5rem;
-    h2{
-        margin: 1rem;
-        font-weight: bolder;
-    }
-    hr{
-        width: 100%;
-        margin: 1rem;
-    }
-    .Project{
-        h2{
-            text-align: center
-        }
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        div{
-            padding: 3rem;
-            width: 32%;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            li{
-                margin-top: 1rem;
-                margin-left: 1rem;
+  padding: 4rem 2rem;
+  font-family: 'Nixie', serif;
+//   background: #1e1e2f;
+  color: #ffffff;
+
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: $dark;
+  }
+
+  hr {
+    width: 60px;
+    margin: 0 auto 2rem auto;
+    height: 3px;
+    background-color: #06007d;
+    border: none;
+    border-radius: 2px;
+  }
+
+  .Project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+
+    div {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      border-left: 5px solid #06007d;
+
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: #06007d;
+        text-align: left;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          margin: 0.75rem 0;
+
+          a {
+            color: #000000;
+            text-decoration: none;
+            position: relative;
+            padding-left: 1.2rem;
+            transition: color 0.3s;
+
+            &::before {
+              content: '➤';
+              position: absolute;
+              left: 0;
+              color: #06007d;
             }
-            a{
-                color:$dark;
-                text-decoration: none;
+
+            &:hover {
+              color: #06007d;
             }
+          }
         }
+      }
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 30px rgba(255, 183, 3, 0.15);
+      }
     }
+  }
+
+  // Responsive font
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .Project div h2 {
+      font-size: 1.2rem;
+    }
+  }
 }

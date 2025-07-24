@@ -1,13 +1,43 @@
-.Skills{
-    padding: 3rem;
-    font-family: Nixie;
-    line-height: 1.5rem;
-    h2{
-        margin: 1rem;
-        font-weight: bolder;
+.Skills {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: Nixie;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+
+  .skill-section {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 1.25rem;
+      color: #333;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
     }
-    hr{
-        width: 100%;
-        margin: 1rem;
+
+    ul {
+      padding-left: 1.2rem;
+      list-style-type: square;
+      color: #444;
+
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
     }
+  }
+}
+.Skills:hover{
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }

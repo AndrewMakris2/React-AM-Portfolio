@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 *::after,
@@ -180,7 +181,7 @@ input[type=button] {
 /* lightest grey - used for outlines */
 /* Other Colors used */
 body {
-  background-color: #ffffff;
+  background-color: #f4f4f9;
 }
 
 @font-face {
@@ -204,6 +205,10 @@ body {
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
   background-size: cover;
   background-position: center top -12rem;
+}
+.Nav Link {
+  text-decoration: none;
+  color: red;
 }
 .Nav .bar {
   display: flex;
@@ -233,17 +238,66 @@ body {
 }
 
 .Learn {
-  padding: 3rem;
-  font-family: Nixie;
-  line-height: 1.5rem;
+  padding: 4rem 2rem;
+  font-family: "Nixie", serif;
+  background: #f4f4f9;
+  color: #222;
 }
 .Learn h2 {
-  margin: 1rem;
-  font-weight: bolder;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 .Learn hr {
-  width: 100%;
-  margin: 1rem;
+  width: 80px;
+  margin: 0 auto 3rem auto;
+  border: none;
+  height: 4px;
+  background: #06007d;
+  border-radius: 2px;
+}
+.Learn .LearnFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.Learn .LearnFlex div {
+  background: #fff;
+  padding: 2rem;
+  flex: 1 1 30%;
+  min-width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: 0.3s ease all;
+  border-top: 4px solid #06007d;
+}
+.Learn .LearnFlex div h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #6c63ff;
+}
+.Learn .LearnFlex div ul {
+  padding-left: 1.2rem;
+}
+.Learn .LearnFlex div ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+.Learn .LearnFlex div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .Learn .LearnFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Learn .LearnFlex div {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 .Problems {
@@ -266,12 +320,18 @@ body {
   line-height: 1.5rem;
 }
 .Expierence h2 {
-  margin: 1rem;
-  font-weight: bolder;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 .Expierence hr {
-  width: 100%;
-  margin: 1rem;
+  width: 80px;
+  margin: 0 auto 3rem auto;
+  border: none;
+  height: 4px;
+  background: #06007d;
+  border-radius: 2px;
 }
 .Expierence .exp {
   display: flex;
@@ -321,52 +381,119 @@ body {
 }
 
 .Projects {
-  padding: 3rem;
-  font-family: Nixie;
-  line-height: 1.5rem;
+  padding: 4rem 2rem;
+  font-family: "Nixie", serif;
+  color: #ffffff;
 }
 .Projects h2 {
-  margin: 1rem;
-  font-weight: bolder;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: rgb(28, 28, 28);
 }
 .Projects hr {
-  width: 100%;
-  margin: 1rem;
+  width: 60px;
+  margin: 0 auto 2rem auto;
+  height: 3px;
+  background-color: #06007d;
+  border: none;
+  border-radius: 2px;
 }
 .Projects .Project {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.Projects .Project h2 {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 .Projects .Project div {
-  padding: 3rem;
-  width: 32%;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  border-left: 5px solid #06007d;
 }
-.Projects .Project div li {
-  margin-top: 1rem;
-  margin-left: 1rem;
+.Projects .Project div h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #06007d;
+  text-align: left;
 }
-.Projects .Project div a {
-  color: rgb(28, 28, 28);
+.Projects .Project div ul {
+  list-style: none;
+  padding-left: 0;
+}
+.Projects .Project div ul li {
+  margin: 0.75rem 0;
+}
+.Projects .Project div ul li a {
+  color: #000000;
   text-decoration: none;
+  position: relative;
+  padding-left: 1.2rem;
+  transition: color 0.3s;
+}
+.Projects .Project div ul li a::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #06007d;
+}
+.Projects .Project div ul li a:hover {
+  color: #06007d;
+}
+.Projects .Project div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(255, 183, 3, 0.15);
+}
+@media (max-width: 600px) {
+  .Projects h2 {
+    font-size: 1.5rem;
+  }
+  .Projects .Project div h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .Skills {
-  padding: 3rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   font-family: Nixie;
-  line-height: 1.5rem;
 }
 .Skills h2 {
-  margin: 1rem;
-  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
 }
-.Skills hr {
-  width: 100%;
-  margin: 1rem;
+.Skills .skill-section {
+  margin-bottom: 2rem;
+}
+.Skills .skill-section h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+.Skills .skill-section ul {
+  padding-left: 1.2rem;
+  list-style-type: square;
+  color: #444;
+}
+.Skills .skill-section ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.Skills:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .Footer {
