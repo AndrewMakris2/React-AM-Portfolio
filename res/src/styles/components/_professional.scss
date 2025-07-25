@@ -2,14 +2,21 @@
     padding: 3rem;
     font-family: Nixie;
     line-height: 1.5rem;
-    h2{
-        margin: 1rem;
-        font-weight: bolder;
-    }
-    hr{
-        width: 100%;
-        margin: 1rem;
-    }
+     h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  hr {
+    width: 80px;
+    margin: 0 auto 3rem auto;
+    border: none;
+    height: 4px;
+    background: #06007d;
+    border-radius: 2px;
+  }
     .exp{
     display: flex;
     justify-content: space-around;

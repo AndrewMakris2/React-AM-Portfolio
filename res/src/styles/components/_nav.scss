@@ -6,7 +6,10 @@
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
     background-size: cover;
     background-position: center top -12rem; // This will move the image up by 50px
-    
+    Link{
+        text-decoration: none;
+        color: red;
+    }
     .bar{
         display: flex;
         justify-content: space-evenly;
