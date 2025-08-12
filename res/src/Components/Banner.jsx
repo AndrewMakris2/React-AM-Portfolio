@@ -46,8 +46,6 @@ const Banner = () => {
         </div>
         <div className='pic'>
             <img src="https://media.licdn.com/dms/image/v2/D5603AQG-U5I8j14S2Q/profile-displayphoto-shrink_800_800/B56ZPbOZeEG4Ac-/0/1734549805455?e=1756339200&v=beta&t=n4KYbijvoZJdEsjAWPgQ1on_EWDv6-hhV5gVxDaDghU" alt="" />
-            <br />
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQG-U5I8j14S2Q/profile-displayphoto-shrink_800_800/B56ZPbOZeEG4Ac-/0/1734549805455?e=1756339200&v=beta&t=n4KYbijvoZJdEsjAWPgQ1on_EWDv6-hhV5gVxDaDghU" alt="" />
         </div>
         
     </div>

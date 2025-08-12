@@ -1,40 +1,154 @@
-.Nav{
-    // height: 20rem;
+// SCSS for a scalable, mobile-first navigation bar
+.Nav {
     border-bottom: 2px groove rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: rgb(255, 255, 255);
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
     background-size: cover;
-    background-position: center top -12rem; // This will move the image up by 50px
-    Link{
-        text-decoration: none;
-        color: red;
-    }
-    .bar{
+    background-position: center top -12rem;
+    position: relative; // Crucial for positioning children like hamburger icon and mobile menu
+    
+    .bar {
         display: flex;
         justify-content: space-evenly;
-        flex-direction: row;
         align-items: center;
         padding: 1.2rem;
+        gap: 1rem;
+    }
+
+    .vertical-line {
+        display: none; // Hidden by default
+    }
+
+    h2, h4 {
+        color: #f0f0f0;
+        font-family: Nixie, sans-serif;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+        font-weight: bolder;
+    }
+    
+    h4 {
+        font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+        font-weight: normal;
+    }
+
+    h4:hover {
+        text-decoration: underline;
+    }
+
+    // Styles for the hamburger icon
+    .hamburger-icon {
+        display: none; // Hidden by default (desktop)
+        cursor: pointer;
+        z-index: 102; // Higher than mobile-menu to be clickable
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        // Adds transitions for the lines for animation
+        .line {
+            width: 30px;
+            height: 3px;
+            background-color: #f0f0f0;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+    }
+
+    // Styles for the mobile menu (always rendered, but off-screen by default)
+    .mobile-menu {
+        display: flex; // Use flex for internal layout
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(5px);
+        z-index: 100;
+        transform: translateX(100%); // Initially off-screen to the right
+        transition: transform 0.5s ease-in-out; // Smooth slide animation
+
+        a { // Styling for links inside the mobile menu
+            color: #f0f0f0;
+            font-size: 2rem;
+            margin: 1.5rem 0;
+            font-weight: bolder;
+            text-decoration: none; // Ensure links don't have default underline
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    /* --- Media Queries --- */
+
+    // Desktop/Tablet view (min-width 769px)
+    @media (min-width: 769px) {
         .vertical-line {
-            width: 2px; /* Adjust thickness */
-            height: 100px; /* Adjust length */
-            background-color: rgb(255, 255, 255); /* Line color */
+            display: block; // Show the line on larger screens
+            width: 2px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+        // Ensure mobile-specific elements are hidden on desktop
+        .hamburger-icon,
+        .mobile-menu {
+            display: none !important;
+        }
+    }
+    
+    // Mobile view (max-width 768px)
+    @media (max-width: 768px) {
+        // Hide regular navigation links on mobile
+        .bar h4 {
+            display: none;
+        }
+        .bar {
+            justify-content: space-between; // Adjust alignment for mobile nav bar
+            width: 100%;
+            padding: 1.2rem 20px; // Adjust padding to match hamburger icon positioning
         }
 
-        h2{
-            color: $light;
-            font-family: Nixie;
-            font-size: 1.3rem;
-            font-weight: bolder ;
+        // Show hamburger icon on mobile
+        .hamburger-icon {
+            display: block;
         }
-        h4{
-            color: $light;
-            font-family: Nixie;
-            font-size: 1.2rem;
-        }
-        h4:hover{
-            text-decoration: underline;
+
+        // When 'mobile-menu-active' class is present on .Nav
+        &.mobile-menu-active {
+            .mobile-menu {
+                transform: translateX(0); // Slide menu into view
+            }
+
+            // Animate hamburger icon to 'X'
+            .hamburger-icon .line:nth-child(1) {
+                transform: translateY(9px) rotate(50deg);
+            }
+            .hamburger-icon .line:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger-icon .line:nth-child(3) {
+                transform: translateY(-9px) rotate(-50deg);
+            }
+
+            // Hide the main bar content (except title) when mobile menu is open
+            .bar {
+                justify-content: center; // Center the title when menu is open
+                width: auto;
+            }
+            .bar h2 {
+                position: relative; // Keep title on top of menu
+                z-index: 103;
+                margin-right: 0; // Remove any horizontal margin
+            }
         }
     }
 }

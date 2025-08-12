@@ -16,7 +16,7 @@ const timelineData = [
   {
     id: 3,
     year: "2022 - Present",
-    title: "Cybersecurity Analyst",
+    title: "Jr. Cybersecurity Analyst",
     institution: "Virtix Health (Remote)",
     description: "Monitor and manage security tools like Exabeam, SentinelOne, and CrowdStrike. Conduct monthly access audits, support HITRUST compliance, respond to alerts, and lead patch/vulnerability remediation across cloud and on-prem systems."
   },
@@ -32,7 +32,7 @@ const timelineData = [
     year: "Ongoing",
     title: "Career Goals",
     institution: "Self-Driven",
-    description: "Actively working toward the CySA+ certification and focused on gaining as many new cybersecurity skills as possible. Aiming to advance into Cloud Security Engineering and eventually transition into a Cyber Architect role. Passionate about secure design, automation, and threat detection in cloud-native environments."
+    description: "Actively working toward the CySA+ certification and focused on gaining as many new cybersecurity skills as possible. Aiming to advance into Cyber Security Analyst Role and eventually transition into a Cyber Architect role. Passionate about secure design, automation, and threat detection in cloud-native environments."
   }
 ];
 

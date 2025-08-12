@@ -16,10 +16,11 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
+    flex-wrap: wrap; // Allows columns to wrap to the next line
   }
 
   .footer-col {
-    flex: 1;
+    flex: 1 1 200px; // Sets a flex-basis of 200px, allowing columns to grow and shrink
     min-width: 200px;
 
     h3 {
@@ -48,6 +49,20 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  // Media query for screens smaller than 768px
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column; // Stacks columns vertically on mobile
+      align-items: center; // Centers content when stacked
+      gap: 3rem;
+    }
+
+    .footer-col {
+      min-width: 100%; // Takes up full width when stacked
+      text-align: center;
     }
   }
 }

@@ -1,33 +1,70 @@
 .Skills {
-  max-width: 900px;
+  max-width: 1150px;
   margin: 3rem auto;
-  padding: 2rem;
-  background: white;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  font-family: Nixie;
+  font-family: 'Nixie', serif;
+  transition: box-shadow 0.3s ease;
+  border-left: 4px solid navy;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: #222;
   }
 
-  .skill-section {
-    margin-bottom: 2rem;
+  // New container for the skill cards
+  .skill-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Creates two columns of equal width
+    gap: 2rem; // Space between the grid items (cards)
+    margin-bottom: 2.5rem;
+  }
+
+  .skill-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem; // Add padding to the cards themselves for better spacing
+    // border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #06007d;
+      min-width: 2.5rem;
+      margin-top: 0.25rem;
+    }
 
     h3 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
       color: #333;
-      margin-bottom: 0.75rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: #ccc;
+        margin-top: 0.5rem;
+        border-radius: 2px;
+      }
     }
 
     ul {
-      padding-left: 1.2rem;
       list-style-type: square;
+      padding-left: 1.2rem;
       color: #444;
 
       li {
@@ -36,8 +73,20 @@
       }
     }
   }
-}
-.Skills:hover{
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+  @media (max-width: 900px) {
+    .skill-cards-container {
+      grid-template-columns: 1fr; // On smaller screens, stack the cards vertically
+    }
+  }
+
+  @media (max-width: 600px) {
+    .skill-card {
+      flex-direction: column;
+
+      .icon {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }
