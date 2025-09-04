@@ -23,7 +23,6 @@ const NavBar = () => {
         <Link to="/experience"><h4>Professional Experience</h4></Link>
         <Link to="/skills"><h4>Technical Skills & Tools</h4></Link>
         <Link to="/projects"><h4>Projects</h4></Link>
-        <Link to="/problem-solving"><h4>Problem-Solving & Risk Management</h4></Link>
         <Link to="/learning"><h4>Learning & Development</h4></Link>
       </div>
 
@@ -36,7 +35,6 @@ const NavBar = () => {
         <Link to="/experience" onClick={() => setMenuOpen(false)}><h4>Professional Experience</h4></Link>
         <Link to="/skills" onClick={() => setMenuOpen(false)}><h4>Technical Skills & Tools</h4></Link>
         <Link to="/projects" onClick={() => setMenuOpen(false)}><h4>Projects</h4></Link>
-        <Link to="/problem-solving" onClick={() => setMenuOpen(false)}><h4>Problem-Solving & Risk Management</h4></Link>
         <Link to="/learning" onClick={() => setMenuOpen(false)}><h4>Learning & Development</h4></Link>
       </div>
     </div>

@@ -26,7 +26,10 @@ const Skills = () => {
           <div>
             <h3>Programming & Automation</h3>
             <ul>
-              <li>React, JavaScript, Python, PowerShell</li>
+              <li>React, JavaScript</li>
+              <li>Python, Node.js</li>
+              <li>HTML, EJS, JSX</li>
+              <li>CSS, SCSS</li>
               <li>Bash scripting, JSON</li>
               <li>PowerShell automation for user/device audits</li>
             </ul>

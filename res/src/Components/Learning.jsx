@@ -11,41 +11,50 @@ const Learning = () => {
         <div>
           <h3><strong>Currently Learning:</strong></h3>
           <ul>
-            <li>Studying for <strong>CompTIA CySA+</strong></li>
-            <li>Cloud Security (AWS, Azure) – Identity, Logging, Encryption</li>
-            <li>Advanced Incident Response & Forensics</li>
-            <li>PowerShell & Python scripting for SOC automation</li>
-            <li>Threat Hunting with YARA and Sigma rules</li>
+            <li>Strategic Security Architecture & Design: Gaining knowledge and hands-on experience in designing enterprise-wide security solutions, including Zero Trust frameworks and cloud-native security principles.</li>
+            <li>Advanced Threat & Risk Management: Building upon incident response and threat hunting skills to inform strategic security policy and risk analysis across a multi-cloud environment.</li>
+            <li>Automation & Orchestration: Developing advanced PowerShell & Python scripting for automating security operations (SecOps) and creating repeatable, scalable security deployments.</li>
+            <li>Core Architectural Certifications: Studying for the CompTIA CySA+ as a key step towards achieving the CISSP certification, the industry gold standard for security architects.</li>
           </ul>
         </div>
 
         {/* Certifications & Training */}
         <div>
-          <h3><strong>Certifications & Training:</strong></h3>
+          <h3><strong>Certifications:</strong></h3>
           <ul>
-            <li>CompTIA CySA+ (planned)</li>
-            <li>AWS Academy Cloud Foundations – Completed</li>
-            <li>Udemy: Mastering Cybersecurity Vulnerability Management 101</li>
-            <li>Udemy: GIAC Security Essentials</li>
-            <li>Udemy: Cybersecurity Threat Hunting for SOC Analysts</li>
-            <li>Udemy: SOC Analysis with Network Fundamentals</li>
-            <li>Future: CISSP or CCSP for senior roles</li>
-            <li>Future: GIAC Certified Intrusion Analyst (GCIA) – network forensics & deep packet inspection</li>
-            <li>Future: Microsoft SC-200 Security Operations Analyst</li>
+            <li>AWS Security Essentials</li>
+            <li>Microsoft Azure Fundamentals (AZ-900)</li>
+            <li>MTA: Web Development Fundamentals</li>
+            <li>AWS Academy Cloud Foundations</li>
+          </ul>
+
+          <h3><strong>Prep Courses & Training:</strong></h3>
+          <ul>
+            <li>CompTIA Security+ Prep (Udemy)</li>
+            <li>Cybersecurity Threat Hunting (Udemy)</li>
+            <li>Vulnerability Management (Udemy)</li>
+            <li>SIEM Engineer Career Path (Let’s Defend Course)</li>
+          </ul>
+
+          <h3><strong>Future Certifications:</strong></h3>
+          <ul>
+            <li>CompTIA CySA+</li>
+            <li>Certified Ethical Hacker (CEH)</li>
           </ul>
         </div>
+
 
         {/* Future Goals */}
         <div>
           <h3><strong>Future Goals:</strong></h3>
           <ul>
-            <li>Become SOC Tier 2 Analyst / Threat Hunter</li>
-            <li>Develop skills as Detection Engineer and Cloud Security Specialist</li>
-            <li>Grow into senior roles: SOC Manager, Cybersecurity Architect</li>
-            <li>Deepen expertise in Cloud SOC: AWS Security Hub, GuardDuty, Azure Sentinel, IAM hardening</li>
+            <li>Advance into a Tier 2/Senior Security Analyst</li>
+            <li>Develop skills as Detection Engineer, Cloud Security Specialist, and in Incident Response</li>
+            <li>My main goal is to one day become a Security Architect</li>
+            <li>To be a cyber architect, I want to develop skills in strategic planning, advanced system design, and risk management frameworks.</li>
+            <li>Future Certifications to help with the goal of being an Architect include CISSP, CISM, CISA, and CompTIA CySA++</li>
           </ul>
         </div>
-
         {/* Portfolio Projects */}
         <div>
           <h3><strong>Future Portfolio Projects:</strong></h3>

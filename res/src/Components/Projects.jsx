@@ -9,7 +9,7 @@ const Projects = () => {
         <div>
           <h3>Python Projects</h3>
           <ul>
-            <li><a href="#">Project Name 1</a></li>
+            <li><a href="https://github.com/AndrewMakris2/Python-vpn">VPN Project (Python Code)</a></li>
             <li><a href="#">Project Name 2</a></li>
             <li><a href="#">Project Name 3</a></li>
           </ul>
@@ -17,17 +17,17 @@ const Projects = () => {
         <div>
           <h3>React Projects</h3>
           <ul>
-            <li><a href="#">Project Name 1</a></li>
-            <li><a href="#">Project Name 2</a></li>
-            <li><a href="#">Project Name 3</a></li>
+            <li><a href="https://fancy-pastelito-fa9d8c.netlify.app/">VPN Project (React Webiste)</a></li>
+            <li><a href="https://eloquent-babbage-15108c.netlify.app/">Old Portfolio (2021)</a></li>
+            <li><a href="https://suspicious-pike-55fa2c.netlify.app/">Batman (Internal APIs)</a></li>
           </ul>
         </div>
         <div>
-          <h3>PowerShell Projects</h3>
+          <h3>Miscelanious Projects</h3>
           <ul>
-            <li><a href="#">Script Name 1</a></li>
-            <li><a href="#">Script Name 2</a></li>
-            <li><a href="#">Script Name 3</a></li>
+            <li><a href="https://github.com/Amakris12/Store-Shoe-API">External API Project</a></li>
+            <li><a href="https://github.com/Amakris12/Nodejs-Passport-Login">Secure Web Authentication with Passport.js</a></li>
+            <li><a href="https://github.com/Amakris12/EJS-Login">EJS Login</a></li>
           </ul>
         </div>
       </div>

@@ -1,8 +1,16 @@
 import React from 'react'
+import gcu from '../Images/gcu.jpg'
+import gcu2 from '../Images/GRAD.jpeg'
+import gcu3 from '../Images/D.jpeg'
+import gcu4 from '../Images/Z.jpeg'
 
 const Banner = () => {
   return (
     <div className="Banner">
+         <div className='pic'>
+            <img src={gcu2} alt="" />
+            <img src={gcu} alt="" />
+        </div>
         <div className='Resume'>
             <h2>About Me</h2>
             <hr />
@@ -44,10 +52,10 @@ const Banner = () => {
                 Based in Arizona, I'm passionate about building secure systems and learning how to stay ahead of evolving threats. Whether it’s scripting out a detection rule, solving a support ticket, or planning future improvements — I’m all in.
             </p>
         </div>
-        <div className='pic'>
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQG-U5I8j14S2Q/profile-displayphoto-shrink_800_800/B56ZPbOZeEG4Ac-/0/1734549805455?e=1756339200&v=beta&t=n4KYbijvoZJdEsjAWPgQ1on_EWDv6-hhV5gVxDaDghU" alt="" />
+         <div className='pic'>
+            <img src={gcu3} alt="" />
+            <img src={gcu4} alt="" />
         </div>
-        
     </div>
   )
 }

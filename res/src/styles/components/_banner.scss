@@ -1,53 +1,45 @@
 .Banner {
+  padding: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: clamp(2rem, 5vw, 4rem); /* Use clamp for fluid padding */
-  font-family: nixie, sans-serif;
+  font-family: Nixie;
   font-weight: bolder;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  gap: 2rem; /* Add gap for consistent spacing between items */
+  flex-wrap: wrap; /* Allows items to wrap onto a new line on smaller screens */
+  margin: 2rem;
+  gap: 2rem; /* Adds space between the items */
+}
 
-  .Resume {
-    /* Use a min-width to ensure the content doesn't get too narrow */
-    /* Use flex-basis for flexible sizing that wraps */
-    flex: 1 1 52%; /* Grow, shrink, and start at 52% width */
-    min-width: 300px;
-    display: flex;
+.Resume {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7rem;
+  margin: 2rem;
+  flex: 1 1 50%; /* Allows the Resume div to be flexible and take up to 50% of the space */
+  max-width: 800px;
+}
+
+.Resume h2 {
+  color: black;
+  font-family: Nixie;
+}
+
+.Resume p {
+  color: black;
+}
+
+img {
+  margin-top: 1rem;
+  width: clamp(20rem, 40vw, 40rem); /* Use clamp to set a flexible width with min and max values */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  border-radius: 0.75rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .Banner {
     flex-direction: column;
-    line-height: 1.5rem;
-
-    h2 {
-      color: black;
-    }
-
-    p {
-      color: black;
-    }
-  }
-
- 
-    img {
-      max-width: 100%; /* Use max-width for image responsiveness */
-      height: 44rem; /* Maintain aspect ratio */
-      border-radius: 0.75rem;
-      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
-
-  /* Media query to stack elements vertically on smaller screens */
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 3rem; /* Add more space when stacking */
-    
-    .Resume,
-    .pic {
-      flex: 1 1 100%; /* Take up the full width */
-      min-width: unset; /* Remove min-width to allow for stacking */
-    }
-
-    .pic img {
-        width: 67%; /* Keep the image at a reasonable size */
-    }
+    gap: 3rem;
   }
 }

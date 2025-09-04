@@ -1,75 +1,88 @@
-.Expierence{
-    padding: 3rem;
-    font-family: Nixie;
-    line-height: 1.5rem;
-     h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
+.Expierence {
+  padding: 3rem;
+  font-family: Nixie;
+  line-height: 1.5rem;
+}
+
+.Expierence h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.Expierence hr {
+  width: 80px;
+  margin: 0 auto 3rem auto;
+  border: none;
+  height: 4px;
+  background: #06007d;
+  border-radius: 2px;
+}
+
+.Expierence .exp {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Expierence .exp-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  border-left: #06007d 2px solid;
+  width: 48%;
+  margin: 1rem;
+}
+
+.Expierence .exp-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+}
+
+.Expierence .exp-card .exp-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.Expierence .exp-card .exp-header .exp-year {
+  font-size: 0.95rem;
+  color: #0077ff;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.Expierence .exp-card .exp-header .exp-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+  color: #222;
+}
+
+.Expierence .exp-card .exp-header .exp-institution {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.Expierence .exp-card .exp-description {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+/* Media Query for smaller screens (e.g., tablets and mobile) */
+@media (max-width: 768px) {
+  .Expierence .exp {
+    flex-direction: column;
+    align-items: stretch;
   }
-
-  hr {
-    width: 80px;
-    margin: 0 auto 3rem auto;
-    border: none;
-    height: 4px;
-    background: #06007d;
-    border-radius: 2px;
-  }
-    .exp{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    }
-    .exp-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 1.5rem 2rem;
-    // min-width: 260px;
-    // max-width: 420px;
-    width: 48%;
-    margin: 1rem;
-   
-
-    &:hover {
-      box-shadow: 0 8px 32px rgba(0,0,0,0.16);
-    }
-
-    .exp-header {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1rem;
-      width: 100%;
-
-      .exp-year {
-        font-size: 0.95rem;
-        color: #0077ff;
-        font-weight: 500;
-        margin-bottom: 0.2rem;
-      }
-
-      .exp-title {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin: 0.2rem 0;
-        color: #222;
-      }
-
-      .exp-institution {
-        font-size: 1rem;
-        color: #555;
-        margin-bottom: 0.2rem;
-      }
-    }
-
-    .exp-description {
-      font-size: 1rem;
-      color: #444;
-      margin-top: 0.5rem;
-    }
+  .Expierence .exp-card {
+    width: 90%; /* Adjust to a percentage that looks good on mobile */
+    margin: 1rem auto;
   }
 }

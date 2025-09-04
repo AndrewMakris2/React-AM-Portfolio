@@ -217,7 +217,7 @@ a {
   background-color: rgb(255, 255, 255);
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_632/212b34104893379.5f6cc87656bf0.gif");
   background-size: cover;
-  background-position: center top -12rem;
+  background-position: center top -10rem;
   position: relative;
   /* --- Media Queries --- */
 }
@@ -399,96 +399,19 @@ a {
   }
 }
 
-.Problems {
-  padding: 4rem 2rem;
-  font-family: Nixie;
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-.Problems h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #000000;
-  margin: 0;
-}
-.Problems hr {
-  width: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 4px;
-  background-color: #000000;
-  border: none;
-  border-radius: 2px;
-}
-.Problems section {
-  padding: 2rem;
-  border-radius: 1rem;
-  border-left: 4px solid navy;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-.Problems section:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
-}
-.Problems section h3 {
-  font-size: 1.4rem;
-  color: #6c63ff;
-  margin-bottom: 1rem;
-}
-.Problems section p {
-  line-height: 1.7;
-}
-.Problems section ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1rem;
-}
-.Problems section ul li {
-  margin-bottom: 0.75rem;
-  color: #000000;
-  padding-left: 1.5rem;
-  position: relative;
-}
-.Problems section ul li::before {
-  content: "➤";
-  position: absolute;
-  left: 0;
-  color: #3b82f6;
-  font-size: 1.2rem;
-}
-@media (max-width: 600px) {
-  .Problems {
-    padding: 2rem 1rem;
-  }
-  .Problems h2 {
-    font-size: 2rem;
-  }
-  .Problems section {
-    padding: 1.5rem;
-  }
-  .Problems section h3 {
-    font-size: 1.2rem;
-  }
-  .Problems section p {
-    font-size: 0.9rem;
-  }
-}
-
 .Expierence {
   padding: 3rem;
   font-family: Nixie;
   line-height: 1.5rem;
 }
+
 .Expierence h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
+
 .Expierence hr {
   width: 80px;
   margin: 0 auto 3rem auto;
@@ -497,53 +420,73 @@ a {
   background: #06007d;
   border-radius: 2px;
 }
+
 .Expierence .exp {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .Expierence .exp-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   padding: 1.5rem 2rem;
+  border-left: #06007d 2px solid;
   width: 48%;
   margin: 1rem;
 }
+
 .Expierence .exp-card:hover {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
 }
+
 .Expierence .exp-card .exp-header {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
   width: 100%;
 }
+
 .Expierence .exp-card .exp-header .exp-year {
   font-size: 0.95rem;
   color: #0077ff;
   font-weight: 500;
   margin-bottom: 0.2rem;
 }
+
 .Expierence .exp-card .exp-header .exp-title {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0.2rem 0;
   color: #222;
 }
+
 .Expierence .exp-card .exp-header .exp-institution {
   font-size: 1rem;
   color: #555;
   margin-bottom: 0.2rem;
 }
+
 .Expierence .exp-card .exp-description {
   font-size: 1rem;
   color: #444;
   margin-top: 0.5rem;
 }
 
+/* Media Query for smaller screens (e.g., tablets and mobile) */
+@media (max-width: 768px) {
+  .Expierence .exp {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .Expierence .exp-card {
+    width: 90%; /* Adjust to a percentage that looks good on mobile */
+    margin: 1rem auto;
+  }
+}
 .Projects {
   padding: 4rem 2rem;
   font-family: Nixie;
@@ -792,49 +735,47 @@ a {
 }
 
 .Banner {
+  padding: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: clamp(2rem, 5vw, 4rem); /* Use clamp for fluid padding */
-  font-family: nixie, sans-serif;
+  font-family: Nixie;
   font-weight: bolder;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  gap: 2rem; /* Add gap for consistent spacing between items */
-  /* Media query to stack elements vertically on smaller screens */
+  flex-wrap: wrap; /* Allows items to wrap onto a new line on smaller screens */
+  margin: 2rem;
+  gap: 2rem; /* Adds space between the items */
 }
-.Banner .Resume {
-  /* Use a min-width to ensure the content doesn't get too narrow */
-  /* Use flex-basis for flexible sizing that wraps */
-  flex: 1 1 52%; /* Grow, shrink, and start at 52% width */
-  min-width: 300px;
+
+.Resume {
   display: flex;
   flex-direction: column;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  margin: 2rem;
+  flex: 1 1 50%; /* Allows the Resume div to be flexible and take up to 50% of the space */
+  max-width: 800px;
 }
-.Banner .Resume h2 {
+
+.Resume h2 {
+  color: black;
+  font-family: Nixie;
+}
+
+.Resume p {
   color: black;
 }
-.Banner .Resume p {
-  color: black;
-}
-.Banner img {
-  max-width: 100%; /* Use max-width for image responsiveness */
-  height: 44rem; /* Maintain aspect ratio */
+
+img {
+  margin-top: 1rem;
+  width: clamp(20rem, 40vw, 40rem); /* Use clamp to set a flexible width with min and max values */
+  height: auto; /* Ensures the aspect ratio is maintained */
   border-radius: 0.75rem;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
   .Banner {
     flex-direction: column;
-    gap: 3rem; /* Add more space when stacking */
-  }
-  .Banner .Resume,
-  .Banner .pic {
-    flex: 1 1 100%; /* Take up the full width */
-    min-width: unset; /* Remove min-width to allow for stacking */
-  }
-  .Banner .pic img {
-    width: 67%; /* Keep the image at a reasonable size */
+    gap: 3rem;
   }
 }/*# sourceMappingURL=index.css.map */
