@@ -21,7 +21,6 @@ const Footer = () => {
             <li><Link to="/experience">Experience & Certifications</Link></li>
             <li><Link to="/skills">Technical Skills & Tools</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/problem-solving">Problem-Solving & Risk Management</Link></li>
             <li><Link to="/learning">Learning & Development</Link></li>
           </ul>
         </div>
@@ -31,13 +30,13 @@ const Footer = () => {
           <h3>Connect</h3>
           <p>
             LinkedIn:{" "}
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/andrew-makris-441969258/" target="_blank" rel="noopener noreferrer">
               Profile
             </a>
           </p>
           <p>
             GitHub:{" "}
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/AndrewMakris2" target="_blank" rel="noopener noreferrer">
               Repository
             </a>
           </p>

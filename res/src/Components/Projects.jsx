@@ -37,7 +37,7 @@ const Projects = () => {
         <div className="MoreProjects">
           <div>
             <h4>GitHub Profile</h4>
-            <a href="#">
+            <a href="https://github.com/AndrewMakris2" target="_blank">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
                 alt="GitHub"
@@ -46,7 +46,7 @@ const Projects = () => {
           </div>
           <div>
             <h4>LinkedIn Profile</h4>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/andrew-makris-441969258/" target="_blank">
               <img
                 src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo.png"
                 alt="LinkedIn"

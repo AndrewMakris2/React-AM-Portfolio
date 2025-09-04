@@ -741,7 +741,7 @@ a {
   align-items: center;
   font-family: Nixie;
   font-weight: bolder;
-  flex-wrap: wrap; /* Allows items to wrap onto a new line on smaller screens */
+  flex-wrap: nowrap; /* Allows items to wrap onto a new line on smaller screens */
   margin: 2rem;
   gap: 2rem; /* Adds space between the items */
 }
@@ -752,7 +752,7 @@ a {
   line-height: 1.7rem;
   margin: 2rem;
   flex: 1 1 50%; /* Allows the Resume div to be flexible and take up to 50% of the space */
-  max-width: 800px;
+  min-width: 800px;
 }
 
 .Resume h2 {
