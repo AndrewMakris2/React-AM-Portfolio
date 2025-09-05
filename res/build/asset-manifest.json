@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8742d109.css",
+    "main.js": "/static/js/main.6618eaad.js",
+    "static/media/gcu.jpg": "/static/media/gcu.7824a23330e96c6a43f4.jpg",
+    "static/media/Z.jpeg": "/static/media/Z.91e7c9459136a71d0353.jpeg",
+    "static/media/D.jpeg": "/static/media/D.e8f88f0350e1816e0eb6.jpeg",
+    "static/media/GRAD.jpeg": "/static/media/GRAD.a49027b54158f7968f95.jpeg",
+    "static/media/NixieOne.ttf": "/static/media/NixieOne.3c0d9ebb564d5026da7b.ttf",
+    "index.html": "/index.html",
+    "main.8742d109.css.map": "/static/css/main.8742d109.css.map",
+    "main.6618eaad.js.map": "/static/js/main.6618eaad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8742d109.css",
+    "static/js/main.6618eaad.js"
+  ]
+}
