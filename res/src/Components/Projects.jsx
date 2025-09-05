@@ -10,7 +10,7 @@ const Projects = () => {
           <h3>Python Projects</h3>
           <ul>
             <li><a href="https://github.com/AndrewMakris2/Python-vpn">VPN Project (Python Code)</a></li>
-            <li><a href="#">Project Name 2</a></li>
+            <li><a href="https://github.com/AndrewMakris2/Python-Log-Analyzer">Log Analyzer (Python Code)</a></li>
             <li><a href="#">Project Name 3</a></li>
           </ul>
         </div>
