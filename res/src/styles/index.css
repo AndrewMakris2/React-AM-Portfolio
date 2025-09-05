@@ -739,11 +739,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Nixie;
+  font-family: Nixie, sans-serif;
   font-weight: bolder;
-  flex-wrap: nowrap; /* Allows items to wrap onto a new line on smaller screens */
+  flex-wrap: nowrap; /* Allow items to wrap on smaller screens */
   margin: 2rem;
-  gap: 2rem; /* Adds space between the items */
+  gap: 2rem;
 }
 
 .Resume {
@@ -751,13 +751,14 @@ a {
   flex-direction: column;
   line-height: 1.7rem;
   margin: 2rem;
-  flex: 1 1 50%; /* Allows the Resume div to be flexible and take up to 50% of the space */
-  min-width: 800px;
+  flex: 1 1 100%; /* Take full width by default */
+  min-width: 0; /* Remove hard-coded minimum width */
+  max-width: 600px; /* Optional: limit maximum width for readability */
 }
 
 .Resume h2 {
   color: black;
-  font-family: Nixie;
+  font-family: Nixie, sans-serif;
 }
 
 .Resume p {
@@ -766,16 +767,22 @@ a {
 
 img {
   margin-top: 1rem;
-  width: clamp(20rem, 40vw, 40rem); /* Use clamp to set a flexible width with min and max values */
-  height: auto; /* Ensures the aspect ratio is maintained */
+  height: 35rem;
+  width: 28rem;
   border-radius: 0.75rem;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
+/* Media query for screens under 1024px */
+@media (max-width: 1300px) {
   .Banner {
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
+  }
+  .Resume {
+    max-width: 90%; /* Allow Resume to shrink on smaller screens */
+  }
+  img {
+    display: none; /* Hide images on smaller screens */
   }
 }/*# sourceMappingURL=index.css.map */
